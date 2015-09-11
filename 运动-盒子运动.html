@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>js运动</title>
+<style>
+#box{
+	width: 200px;
+	height: 200px;
+	background: red;
+	position: relative;
+	top: 50px;
+	left: 0px;
+}
+
+</style>
+
+</head>
+<body>
+
+<input type="button" value="移动" onclick="move()"/>
+<script>
+     var timer=null;//放定时器
+	
+	function move(){
+		var oDiv=document.getElementById('box');
+		clearInterval(timer);//清除定时器
+		timer=setInterval(function(){
+			var speed=10;
+		if (oDiv.offsetLeft>=300) {
+			clearInterval(timer);
+		}else{
+			oDiv.style.left=oDiv.offsetLeft+'px';
+		}
+		},30);
+		
+	}
+</script>
+<div id="box">
+
+</div>
+
+</body>
+</html>
