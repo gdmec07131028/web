@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>DOM表格的应用</title>
+</head>
+<body>
+<script>
+window.onload=function(){
+  var oUl1=document.getElementById('ul1');
+  var oUl2=document.getElementById('ul2');
+  var oBtn=document.getElementById('btn');
+
+oBtn.onclick=function(){
+  var oLi=oUl1.children[0];
+
+  oUl2.appendChild(oLi);
+};
+};
+</script>
+
+<ul id="ul1">
+<li>1</li>
+<li>2</li>
+<li>3</li>
+</ul>
+<input type="button" id="btn" value="排序" />
+<ul id="ul2">
+   
+ </ul>
+ 
+ 
+</body>
+</html>
