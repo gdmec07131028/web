@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>动画过渡</title>
+	<style>
+		div{
+			width: 100px;
+			height: 100px;
+			background-color: #CCC;
+			transition:width 2s,height 2s,transform 2s;
+			-webkit-transition: width 2s,height 2s,-webkit-transform 2s;
+            -moz-transition: width 2s,height 2s,-moz-transform 2s;
+            -ms-transition: width 2s,height 2s,-ms-transform 2s;
+            -o-transition: width 2s,height 2s,-o-transform 2s;
+
+            transition-delay: 1s;
+            -webkit-transition-delay: 1s;
+            -moz-transition-delay: 1s;
+            -ms-transition-delay: 1s;
+            -o-transition-delay: 1s;
+
+		}
+		div:hover{
+			width: 200px;
+			height: 200px;
+			transform:rotate(360deg);
+			-webkit-transform: rotate(360deg);
+			-moz-transform: rotate(360deg);
+			-ms-transform: rotate(360deg);
+			-o-transform: rotate(360deg);
+		}
+	</style>
+</head>
+<body>
+<div>动画效果</div>
+
+</body>
+</html>

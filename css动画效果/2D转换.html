@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>2D的转换</title>
+	<style>
+	
+		div{
+			margin: 100px;
+			width: 100px;
+			height: 100px;
+			background-color: #CCC;
+		}
+
+		.box1{
+			/* transform:translate(100px,100px);移动
+			-webkit-transform: translate(100px,100px);chrome safari
+			-ms-transform: translate(100px,100px);IE
+			-o-transform: translate(100px,100px);opera
+			-moz-transform: translate(100px,100px);firefox */
+
+			transform:rotate(100deg);角度变换
+			-webkit-transform: rotate(100deg);/*chrome safari*/
+			-ms-transform: rotate(100deg);/*IE*/
+			-o-transform: rotate(100deg);/*opera*/
+			-moz-transform: rotate(100deg);/*firefox*/
+			
+			/* transform:scale(2,2);倍数
+			-webkit-transform: scale(2,2);chrome safari
+			-ms-transform: scale(2,2);IE
+			-o-transform:scale(2,2);opera
+			-moz-transform: scale(2,2);firefox  */
+
+			/* transform:skew(100deg,100deg);围绕X，Y轴变换的角度
+			-webkit-transform: skew(100deg,100deg);chrome safari
+			-ms-transform: skew(100deg,100deg);IE
+			-o-transform: skew(100deg,100deg);opera
+			-moz-transform: skew(100deg,100deg);firefox  */
+
+		}
+
+
+	</style>
+</head>
+<body>
+<div > 原始效果</div>
+</br>
+<div class="box1"> 改变效果</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>动画效果</title>
+	<style>
+		div{
+			width: 100px;
+			height: 100px;
+			background-color: #CCC;
+			position: relative;
+            animation: anim 5s infinite:alternate;
+            -webkit-animation: anim 5s ;
+            -moz-animation: anim 5s;
+            -ms-animation: anim 5s;
+            -o-animation: anim 5s;
+            -webkit-animation-iteration-count: infinite;/*循环*/
+            --moz-animation-iteration-count: infinite;
+            -ms-animation-iteration-count: infinite;
+            -o-animation-iteration-count: infinite;
+		}
+
+		@keyframes anim{
+             0%{left:0px;top:0px;background-color: yellow}
+             25%{left:200px;top:0px;background-color: orange}
+             50%{left:200px;top:200px;background-color: red}
+             75%{left:0px;top:200px;background-color: blue}
+             100%{left:0px;top:0px;background-color: yellow}
+		}
+		@-webkit-keyframes anim{
+             0%{left:0px;top:0px;background-color: yellow}
+             25%{left:200px;top:0px;background-color: orange}
+             50%{left:200px;top:200px;background-color: red}
+             75%{left:0px;top:200px;background-color: blue}
+             100%{left:0px;top:0px;background-color: yellow}
+		}
+		@-moz-keyframes anim{
+             0%{left:0px;top:0px;background-color: yellow}
+             25%{left:200px;top:0px;background-color: orange}
+             50%{left:200px;top:200px;background-color: red}
+             75%{left:0px;top:200px;background-color: blue}
+             100%{left:0px;top:0px;background-color: yellow}
+		}
+		@-ms-keyframes anim{
+             0%{left:0px;top:0px;background-color: yellow}
+             25%{left:200px;top:0px;background-color: orange}
+             50%{left:200px;top:200px;background-color: red}
+             75%{left:0px;top:200px;background-color: blue}
+             100%{left:0px;top:0px;background-color: yellow}
+		}
+		@-o-keyframes anim{
+             0%{left:0px;top:0px;background-color: yellow}
+             25%{left:200px;top:0px;background-color: orange}
+             50%{left:200px;top:200px;background-color: red}
+             75%{left:0px;top:200px;background-color: blue}
+             100%{left:0px;top:0px;background-color: yellow}
+		}
+	</style>
+</head>
+<body>
+<div>
+	
+</div>
+</body>
+</html>
